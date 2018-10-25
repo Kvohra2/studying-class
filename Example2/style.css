@@ -1,0 +1,56 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+head, header, main, footer{
+	min-width: 855px;
+	overflow: auto;
+}
+
+
+/*getting the header floated*/
+h1{
+	float: left;
+	width: 285px;
+}
+
+header p{
+	float: right;
+	width: 570px;
+	vertical-align: bottom;
+}
+
+/*getting the comments floated*/
+main .comment-input {
+	float: left;
+	width: 285px;
+}
+
+main .comments{
+	float: right;
+	width: 570px;
+}
+
+/*Creates individual boxes around each differnt comment with rounded edges*/
+.comments p{
+	border: 1px solid green;
+	border-radius: 2px;
+}
+
+
+
+/*This section right here gives alternating colors on the comments 
+class for paragraphs using the nth-child style property.*/
+.comments p:nth-child(even){
+	background: lavender;
+}
+
+.comments p:nth-child(odd){
+	background: gainsboro
+}
+
+header .container, main .container{
+	max-width: 855px;
+	margin: auto;
+}
